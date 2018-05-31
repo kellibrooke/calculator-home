@@ -38,4 +38,15 @@ var heightInput= parseInt(prompt("Enter your height in inches"));
 
 alert("Your BMI is " + bmi(weightInput, heightInput) + ".");
 
-//weight in lbs divided by height in inches squared, times 703
+var celsius = function(tempF){
+  return (tempF - 32) / 1.8;
+}
+
+var fahrenheit = function(tempC){
+  return tempC * 1.8 + 32;
+}
+
+var inputF= parseInt(prompt("Enter a temperature in Fahrenheit to see what it is in Celsius."));
+alert(celsius(inputF));
+var inputC= parseInt(prompt("Enter a temperature in Celsius to see what it is in Fahrenheit."));
+alert(fahrenheit(inputC));
